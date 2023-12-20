@@ -240,9 +240,9 @@ dex_import {
 }
 
 dex_import {
-	name: "vendor.qti.ims.factory-V2.0-java",
+	name: "vendor.qti.ims.factory-V2.2-java",
 	owner: "oneplus",
-	jars: ["proprietary/system_ext/framework/vendor.qti.ims.factory-V2.0-java.jar"],
+	jars: ["proprietary/system_ext/framework/vendor.qti.ims.factory-V2.2-java.jar"],
 	system_ext_specific: true,
 }
 
