@@ -1932,10 +1932,20 @@
          maxHFRFrameWidth="0" maxHFRFrameHeight="0"
          maxHFRMode="0"  />
 
+<!-- #ifndef OPLUS_BUG_COMPATIBILITY -->
+    <!-- Guanbiao.Liu@MULTIMEDIA.MEDIASERVICE.PLAYER, 2022/08/23, Modify for promote aac audio quality -->
+    <!--
     <AudioEncoderCap name="aac" enabled="true"
         minBitRate="8000" maxBitRate="96000"
         minSampleRate="8000" maxSampleRate="48000"
         minChannels="1" maxChannels="6" />
+    -->
+    <!-- #else  //OPLUS_BUG_COMPATIBILITY -->
+    <AudioEncoderCap name="aac" enabled="true"
+        minBitRate="8000" maxBitRate="256000"
+        minSampleRate="8000" maxSampleRate="48000"
+        minChannels="1" maxChannels="6" />
+    <!-- #endif //OPLUS_BUG_COMPATIBILITY -->
 
     <AudioEncoderCap name="heaac" enabled="true"
         minBitRate="8000" maxBitRate="64000"
