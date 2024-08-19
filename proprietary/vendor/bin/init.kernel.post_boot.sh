@@ -45,6 +45,9 @@ case "$platformid" in
     "475"|"499"|"487"|"488"|"498"|"497"|"515")
 	/vendor/bin/sh /vendor/bin/init.kernel.post_boot-yupik.sh
 	;;
+    "575"|"576")
+	/vendor/bin/sh /vendor/bin/init.kernel.post_boot-katmai.sh
+	;;
      *)
 	echo "***WARNING***: Invalid SoC ID\n\t No postboot settings applied!!\n"
 	;;
