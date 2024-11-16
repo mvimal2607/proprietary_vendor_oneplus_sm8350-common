@@ -7,8 +7,6 @@ PRODUCT_SOONG_NAMESPACES += \
 
 PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8350-common/proprietary/odm/etc/init/android.hardware.drm@1.3-service.widevine.rc:$(TARGET_COPY_OUT_ODM)/etc/init/android.hardware.drm@1.3-service.widevine.rc \
-    vendor/oneplus/sm8350-common/proprietary/odm/etc/init/vendor.pixelworks.hardware.display.iris-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.pixelworks.hardware.display.iris-service.rc \
-    vendor/oneplus/sm8350-common/proprietary/odm/etc/init/vendor.pixelworks.hardware.feature.irisfeature-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.pixelworks.hardware.feature.irisfeature-service.rc \
     vendor/oneplus/sm8350-common/proprietary/odm/etc/izat.conf:$(TARGET_COPY_OUT_ODM)/etc/izat.conf \
     vendor/oneplus/sm8350-common/proprietary/odm/etc/sap.conf:$(TARGET_COPY_OUT_ODM)/etc/sap.conf \
     vendor/oneplus/sm8350-common/proprietary/odm/firmware/100ms_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/100ms_RTP.bin \
@@ -756,7 +754,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8350-common/proprietary/vendor/etc/sensors/config/sns_tilt_to_wake.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_tilt_to_wake.json \
     vendor/oneplus/sm8350-common/proprietary/vendor/etc/sensors/config/sns_wrist_pedo.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_wrist_pedo.json \
     vendor/oneplus/sm8350-common/proprietary/vendor/etc/sensors/sns_reg_config:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/sns_reg_config \
-    vendor/oneplus/sm8350-common/proprietary/vendor/etc/snapdragon_color_libs_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/snapdragon_color_libs_config.xml \
     vendor/oneplus/sm8350-common/proprietary/vendor/etc/ssg/ta_config.json:$(TARGET_COPY_OUT_VENDOR)/etc/ssg/ta_config.json \
     vendor/oneplus/sm8350-common/proprietary/vendor/etc/ssg/tz_whitelist.json:$(TARGET_COPY_OUT_VENDOR)/etc/ssg/tz_whitelist.json \
     vendor/oneplus/sm8350-common/proprietary/vendor/etc/thermal-engine.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine.conf \
@@ -982,10 +979,8 @@ PRODUCT_PACKAGES += \
     libcneqmiutils \
     libcpion \
     libcvpcpuRev_skel \
-    libcwb_sm8350 \
     libdataitems \
     libdisp-aba \
-    libdisplayconfig.qti \
     libdisplayqos \
     libdisplayskuutils \
     libdpmqmihal \
@@ -1000,7 +995,6 @@ PRODUCT_PACKAGES += \
     libgplaf \
     libgps.utils \
     libhdr_tm \
-    libhistogram \
     libizat_client_api \
     libizat_core \
     libjnihelper \
@@ -1033,8 +1027,6 @@ PRODUCT_PACKAGES += \
     libpdnotifier \
     libperipheral_client \
     libprekill \
-    libpwirisfeature \
-    libpwirishalwrapper \
     libqcbor \
     libqcc_file_agent \
     libqcrilNr \
@@ -1045,7 +1037,6 @@ PRODUCT_PACKAGES += \
     libqcrildatactl \
     libqdcm-mode-parser \
     libqdma_file_agent \
-    libqdutils \
     libqisl \
     libqrtr \
     libqrtrclient \
@@ -1062,14 +1053,11 @@ PRODUCT_PACKAGES += \
     librilqmimiscservices \
     librilqmiservices \
     librpmb \
-    libsdedrm \
     libsdm-color \
     libsdm-colormgr-algo \
     libsdm-diag \
     libsdm-disp-vndapis \
-    libsdmcore \
     libsdmextension \
-    libsdmutils \
     libsensorcal \
     libsensorslog \
     libskewknob \
@@ -1302,26 +1290,12 @@ PRODUCT_PACKAGES += \
     libdmtpclient \
     liboemcrypto \
     liboplus_service \
-    libpwirisIoctlWrapper \
-    libpwirisPCS \
-    libpwiriscalibrate \
-    libpwirisfeature_odm \
-    libpwirishalwrapper_odm \
-    libpwirispq \
-    libpwirisservice \
-    libpwirissoft \
-    libpwsoftirisPCS \
-    libsnapdragoncolor-pxlw \
     libwvhidl \
     libwvdrmengine \
     vendor.oplus.hardware.appradio@1.0 \
     vendor.oplus.hardware.communicationcenter_compat@1.0 \
-    vendor.oplus.hardware.cwb@1.0 \
     vendor.oplus.hardware.ims@1.0 \
     vendor.oplus.hardware.radio@1.0 \
-    vendor.pixelworks.hardware.display@1.0 \
-    vendor.pixelworks.hardware.display@1.1 \
-    vendor.pixelworks.hardware.feature@1.0 \
     CACertService \
     CneApp \
     IWlanService \
@@ -1348,9 +1322,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.gnss@4.0-service.xml \
     vendor.qti.hardware.servicetracker@1.2-service.xml \
     manifest_android.hardware.drm@1.3-service.widevine.xml \
-    manifest_oplus_cwb.xml \
-    vendor.pixelworks.hardware.display.iris-service.xml \
-    vendor.pixelworks.hardware.feature.irisfeature-service.xml \
     adpl \
     adsprpcd \
     cdsprpcd \
@@ -1369,7 +1340,6 @@ PRODUCT_PACKAGES += \
     vendor.display.color@1.0-service \
     vendor.qti.hardware.alarm@1.0-service \
     vendor.qti.hardware.capabilityconfigstore@1.0-service \
-    vendor.qti.hardware.display.composer-service \
     vendor.qti.hardware.perf@2.2-service \
     vendor.qti.hardware.qseecom@1.0-service \
     vendor.qti.hardware.qteeconnector@1.0-service \
@@ -1380,8 +1350,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.media.c2@1.0-service \
     ims_rtp_daemon \
     imsdaemon \
-    init.kernel.post_boot-lahaina \
-    init.kernel.post_boot-yupik \
     init.kernel.post_boot \
     init.qcom.sensors \
     init.qti.chg_policy \
@@ -1430,8 +1398,6 @@ PRODUCT_PACKAGES += \
     tcmd \
     wfdservice \
     android.hardware.drm@1.3-service.widevine \
-    vendor.pixelworks.hardware.display.iris-service \
-    vendor.pixelworks.hardware.feature.irisfeature-service \
     oplus_sensor_fb
 
 PRODUCT_PACKAGES += \
