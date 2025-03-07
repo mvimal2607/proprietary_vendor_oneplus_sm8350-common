@@ -60,13 +60,13 @@
             {
                 "id": "2",
                 "configs": {
-                    "oplus-sr-enable": "1"
+                    "oplus-sr-enable-v1": "1"
                 }
             },
             {
                 "id": "3",
                 "configs": {
-                    "oplus-sr-enable": "1",
+                    "oplus-sr-enable-v1": "1",
                     "oplus-osie-enable": "1"
                 }
             }
