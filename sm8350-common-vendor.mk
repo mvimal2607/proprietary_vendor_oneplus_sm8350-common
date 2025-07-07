@@ -7,6 +7,8 @@ PRODUCT_SOONG_NAMESPACES += \
 
 PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8350-common/proprietary/odm/etc/init/android.hardware.drm@1.3-service.widevine.rc:$(TARGET_COPY_OUT_ODM)/etc/init/android.hardware.drm@1.3-service.widevine.rc \
+    vendor/oneplus/sm8350-common/proprietary/odm/etc/init/vendor.pixelworks.hardware.display.iris-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.pixelworks.hardware.display.iris-service.rc \
+    vendor/oneplus/sm8350-common/proprietary/odm/etc/init/vendor.pixelworks.hardware.feature.irisfeature-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.pixelworks.hardware.feature.irisfeature-service.rc \
     vendor/oneplus/sm8350-common/proprietary/odm/etc/izat.conf:$(TARGET_COPY_OUT_ODM)/etc/izat.conf \
     vendor/oneplus/sm8350-common/proprietary/odm/etc/sap.conf:$(TARGET_COPY_OUT_ODM)/etc/sap.conf \
     vendor/oneplus/sm8350-common/proprietary/odm/firmware/100ms_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/100ms_RTP.bin \
@@ -1012,6 +1014,8 @@ PRODUCT_PACKAGES += \
     libpdnotifier \
     libperipheral_client \
     libprekill \
+    libpwirisfeature \
+    libpwirishalwrapper \
     libqcbor \
     libqcc_file_agent \
     libqcrilNr \
@@ -1279,6 +1283,15 @@ PRODUCT_PACKAGES += \
     libdmtpclient \
     liboemcrypto \
     liboplus_service \
+    libpwirisIoctlWrapper \
+    libpwirisPCS \
+    libpwiriscalibrate \
+    libpwirisfeature_odm \
+    libpwirishalwrapper_odm \
+    libpwirispq \
+    libpwirisservice \
+    libpwirissoft \
+    libpwsoftirisPCS \
     libsnapdragoncolor-pxlw \
     libwvhidl \
     libwvdrmengine \
@@ -1287,6 +1300,9 @@ PRODUCT_PACKAGES += \
     vendor.oplus.hardware.cwb@1.0 \
     vendor.oplus.hardware.ims@1.0 \
     vendor.oplus.hardware.radio@1.0 \
+    vendor.pixelworks.hardware.display@1.0 \
+    vendor.pixelworks.hardware.display@1.1 \
+    vendor.pixelworks.hardware.feature@1.0 \
     CACertService \
     CneApp \
     IWlanService \
@@ -1314,6 +1330,8 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.servicetracker@1.2-service.xml \
     manifest_android.hardware.drm@1.3-service.widevine.xml \
     manifest_oplus_cwb.xml \
+    vendor.pixelworks.hardware.display.iris-service.xml \
+    vendor.pixelworks.hardware.feature.irisfeature-service.xml \
     adpl \
     adsprpcd \
     cdsprpcd \
@@ -1391,6 +1409,8 @@ PRODUCT_PACKAGES += \
     tcmd \
     wfdservice \
     android.hardware.drm@1.3-service.widevine \
+    vendor.pixelworks.hardware.display.iris-service \
+    vendor.pixelworks.hardware.feature.irisfeature-service \
     oplus_sensor_fb
 
 PRODUCT_PACKAGES += \
