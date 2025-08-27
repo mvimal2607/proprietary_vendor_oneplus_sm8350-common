@@ -17756,6 +17756,22 @@ cc_prebuilt_binary {
 }
 
 sh_binary {
+    name: "init.kernel.post_boot-lahaina",
+    owner: "oneplus",
+    src: "proprietary/vendor/bin/init.kernel.post_boot-lahaina.sh",
+    filename: "init.kernel.post_boot-lahaina.sh",
+    soc_specific: true,
+}
+
+sh_binary {
+    name: "init.kernel.post_boot-yupik",
+    owner: "oneplus",
+    src: "proprietary/vendor/bin/init.kernel.post_boot-yupik.sh",
+    filename: "init.kernel.post_boot-yupik.sh",
+    soc_specific: true,
+}
+
+sh_binary {
     name: "init.kernel.post_boot",
     owner: "oneplus",
     src: "proprietary/vendor/bin/init.kernel.post_boot.sh",
