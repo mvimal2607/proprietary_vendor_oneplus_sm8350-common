@@ -762,6 +762,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8350-common/proprietary/vendor/gpu/kbc/unified_ksqs.bin:$(TARGET_COPY_OUT_VENDOR)/gpu/kbc/unified_ksqs.bin
 
 PRODUCT_PACKAGES += \
+    vendor.qti.diaghal-V1-ndk \
     btaudio_offload_if \
     eglSubDriverAndroid \
     libEGL_adreno \
@@ -1252,6 +1253,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.dpmservice@1.0 \
     vendor.qti.hardware.wifidisplaysession@1.0 \
     vendor.qti.hardware.wifidisplaysession_aidl-V1-ndk \
+    vendor.qti.ims.datachannelservice-V1-ndk \
     vendor.qti.imsrtpservice@3.0 \
     vendor.qti.imsrtpservice@3.1 \
     libbluetooth_audio_extend_factory_client \
@@ -1291,10 +1293,23 @@ PRODUCT_PACKAGES += \
     WfdCommon \
     com.qti.dpmframework \
     dpmapi \
-    oplus-ims-ext \
     qcrilhook \
     vendor.qti.hardware.alarm-V1.0-java \
+    vendor.qti.ims.connection-V1.0-java \
+    vendor.qti.ims.connectionaidlservice-V1-java \
+    vendor.qti.ims.datachannelservice-V1-java \
     vendor.qti.ims.factory-V2.0-java \
+    vendor.qti.ims.factory-V2.1-java \
+    vendor.qti.ims.factory-V2.2-java \
+    vendor.qti.ims.factoryaidlservice-V1-java \
+    vendor.qti.ims.rcssip-V1.0-java \
+    vendor.qti.ims.rcssip-V1.1-java \
+    vendor.qti.ims.rcssip-V1.2-java \
+    vendor.qti.ims.rcssipaidlservice-V1-java \
+    vendor.qti.ims.rcsuce-V1.0-java \
+    vendor.qti.ims.rcsuce-V1.1-java \
+    vendor.qti.ims.rcsuce-V1.2-java \
+    vendor.qti.ims.rcsuceaidlservice-V1-java \
     android.hardware.gnss@2.1-service-qti.xml \
     c2_manifest_vendor.xml \
     vendor.qti.gnss@4.0-service.xml \

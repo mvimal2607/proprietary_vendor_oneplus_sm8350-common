@@ -16,6 +16,31 @@ soong_namespace {
 }
 
 cc_prebuilt_library_shared {
+    name: "vendor.qti.diaghal-V1-ndk",
+    owner: "oneplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system/lib64/vendor.qti.diaghal-V1-ndk.so",
+            ],
+            shared_libs: [
+                "libbinder_ndk",
+                "android.hardware.common-V2-ndk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+}
+
+cc_prebuilt_library_shared {
     name: "btaudio_offload_if",
     owner: "oneplus",
     strip: {
@@ -14439,6 +14464,8 @@ cc_prebuilt_library_shared {
                 "libhidlmemory",
                 "libc",
                 "libcutils",
+                "libbinder_ndk",
+                "vendor.qti.diaghal-V1-ndk",
                 "libc++",
                 "libm",
                 "libdl",
@@ -15480,6 +15507,31 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "vendor.qti.ims.datachannelservice-V1-ndk",
+    owner: "oneplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system_ext/lib64/vendor.qti.ims.datachannelservice-V1-ndk.so",
+            ],
+            shared_libs: [
+                "libbinder_ndk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    system_ext_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "vendor.qti.imsrtpservice@3.0",
     owner: "oneplus",
     strip: {
@@ -16414,15 +16466,6 @@ dex_import {
 }
 
 dex_import {
-    name: "oplus-ims-ext",
-    owner: "oneplus",
-    jars: [
-        "proprietary/system_ext/framework/oplus-ims-ext.jar",
-    ],
-    system_ext_specific: true,
-}
-
-dex_import {
     name: "qcrilhook",
     owner: "oneplus",
     jars: [
@@ -16441,10 +16484,136 @@ dex_import {
 }
 
 dex_import {
+    name: "vendor.qti.ims.connection-V1.0-java",
+    owner: "oneplus",
+    jars: [
+        "proprietary/system_ext/framework/vendor.qti.ims.connection-V1.0-java.jar",
+    ],
+    system_ext_specific: true,
+}
+
+dex_import {
+    name: "vendor.qti.ims.connectionaidlservice-V1-java",
+    owner: "oneplus",
+    jars: [
+        "proprietary/system_ext/framework/vendor.qti.ims.connectionaidlservice-V1-java.jar",
+    ],
+    system_ext_specific: true,
+}
+
+dex_import {
+    name: "vendor.qti.ims.datachannelservice-V1-java",
+    owner: "oneplus",
+    jars: [
+        "proprietary/system_ext/framework/vendor.qti.ims.datachannelservice-V1-java.jar",
+    ],
+    system_ext_specific: true,
+}
+
+dex_import {
     name: "vendor.qti.ims.factory-V2.0-java",
     owner: "oneplus",
     jars: [
         "proprietary/system_ext/framework/vendor.qti.ims.factory-V2.0-java.jar",
+    ],
+    system_ext_specific: true,
+}
+
+dex_import {
+    name: "vendor.qti.ims.factory-V2.1-java",
+    owner: "oneplus",
+    jars: [
+        "proprietary/system_ext/framework/vendor.qti.ims.factory-V2.1-java.jar",
+    ],
+    system_ext_specific: true,
+}
+
+dex_import {
+    name: "vendor.qti.ims.factory-V2.2-java",
+    owner: "oneplus",
+    jars: [
+        "proprietary/system_ext/framework/vendor.qti.ims.factory-V2.2-java.jar",
+    ],
+    system_ext_specific: true,
+}
+
+dex_import {
+    name: "vendor.qti.ims.factoryaidlservice-V1-java",
+    owner: "oneplus",
+    jars: [
+        "proprietary/system_ext/framework/vendor.qti.ims.factoryaidlservice-V1-java.jar",
+    ],
+    system_ext_specific: true,
+}
+
+dex_import {
+    name: "vendor.qti.ims.rcssip-V1.0-java",
+    owner: "oneplus",
+    jars: [
+        "proprietary/system_ext/framework/vendor.qti.ims.rcssip-V1.0-java.jar",
+    ],
+    system_ext_specific: true,
+}
+
+dex_import {
+    name: "vendor.qti.ims.rcssip-V1.1-java",
+    owner: "oneplus",
+    jars: [
+        "proprietary/system_ext/framework/vendor.qti.ims.rcssip-V1.1-java.jar",
+    ],
+    system_ext_specific: true,
+}
+
+dex_import {
+    name: "vendor.qti.ims.rcssip-V1.2-java",
+    owner: "oneplus",
+    jars: [
+        "proprietary/system_ext/framework/vendor.qti.ims.rcssip-V1.2-java.jar",
+    ],
+    system_ext_specific: true,
+}
+
+dex_import {
+    name: "vendor.qti.ims.rcssipaidlservice-V1-java",
+    owner: "oneplus",
+    jars: [
+        "proprietary/system_ext/framework/vendor.qti.ims.rcssipaidlservice-V1-java.jar",
+    ],
+    system_ext_specific: true,
+}
+
+dex_import {
+    name: "vendor.qti.ims.rcsuce-V1.0-java",
+    owner: "oneplus",
+    jars: [
+        "proprietary/system_ext/framework/vendor.qti.ims.rcsuce-V1.0-java.jar",
+    ],
+    system_ext_specific: true,
+}
+
+dex_import {
+    name: "vendor.qti.ims.rcsuce-V1.1-java",
+    owner: "oneplus",
+    jars: [
+        "proprietary/system_ext/framework/vendor.qti.ims.rcsuce-V1.1-java.jar",
+    ],
+    system_ext_specific: true,
+}
+
+dex_import {
+    name: "vendor.qti.ims.rcsuce-V1.2-java",
+    owner: "oneplus",
+    jars: [
+        "proprietary/system_ext/framework/vendor.qti.ims.rcsuce-V1.2-java.jar",
+    ],
+    system_ext_specific: true,
+}
+
+dex_import {
+    name: "vendor.qti.ims.rcsuceaidlservice-V1-java",
+    owner: "oneplus",
+    jars: [
+        "proprietary/system_ext/framework/vendor.qti.ims.rcsuceaidlservice-V1-java.jar",
     ],
     system_ext_specific: true,
 }
