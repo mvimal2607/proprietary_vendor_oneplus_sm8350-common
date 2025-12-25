@@ -1283,8 +1283,8 @@ PRODUCT_PACKAGES += \
     CneApp \
     IWlanService \
     TimeService \
-    PowerOffAlarm \
     ImsRcsService \
+    PowerOffAlarm \
     QtiTelephonyService \
     WfdService \
     dpmserviceapp \
@@ -1294,7 +1294,6 @@ PRODUCT_PACKAGES += \
     com.qti.dpmframework \
     dpmapi \
     qcrilhook \
-    vendor.qti.hardware.alarm-V1.0-java \
     vendor.qti.ims.connection-V1.0-java \
     vendor.qti.ims.connectionaidlservice-V1-java \
     vendor.qti.ims.datachannelservice-V1-java \
