@@ -1,35 +1,49 @@
 {
-  "licenseOEMIDs" : 81,
-  "licenseFeaturesIds" : [ "1601", "1600" ],
-  "licenseHardwareVersions" : [ "0x600F0100" ],
-  "licenseeName" : "Oppo Widevine SM8350 Oct 2020"
+  "licenseOEMIDs": 51,
+  "licenseFeaturesIds": [
+    "1601",
+    "1600"
+  ],
+  "licenseHardwareVersions": [
+    "0x6018"
+  ],
+  "licenseeName": "oem_51_prj_Oppo Widevine SM7325 Apr 2021",
+  "features": [
+    "CPZ"
+  ],
+  "featureBundles": [
+    "Widevine"
+  ],
+  "licenseExpirationPerpetual": true,
+  "deviceFileName": "1600-1601-no-exp-2921185575.pfm",
+  "licenseSerial": "0dc3c0273043913304a970a8000001790e78e7c6"
 }
 
 -----BEGIN CERTIFICATE-----
-MIIEbTCCAyGgAwIBAgIUAjV3HxNaqvr4eKC/AAABdR2VlKEwQQYJKoZIhvcNAQEK
+MIIEeTCCAy2gAwIBAgIUDcPAJzBDkTMEqXCoAAABeQ5458YwQQYJKoZIhvcNAQEK
 MDSgDzANBglghkgBZQMEAgEFAKEcMBoGCSqGSIb3DQEBCDANBglghkgBZQMEAgEF
 AKIDAgEgMG8xJDAiBgNVBAoMG1F1YWxjb21tIFRlY2hub2xvZ2llcywgSW5jLjEq
 MCgGA1UECwwhUXVhbGNvbW0gQ3J5cHRvZ3JhcGhpYyBPcGVyYXRpb25zMRswGQYD
 VQQDDBJDSExTRSBTaWduaW5nIENlcnQwIBcNNzAwMTAxMDAwMDAxWhgPOTk5OTEy
-MzEyMzU5NTlaMHoxJjAkBgNVBAMMHU9wcG8gV2lkZXZpbmUgU004MzUwIE9jdCAy
-MDIwMSQwIgYDVQQKDBtRdWFsY29tbSBUZWNobm9sb2dpZXMsIEluYy4xKjAoBgNV
-BAsMIVF1YWxjb21tIENyeXB0b2dyYXBoaWMgT3BlcmF0aW9uczCCASAwCwYJKoZI
-hvcNAQEBA4IBDwAwggEKAoIBAQD/////////////////////////////////////
+MzEyMzU5NTlaMIGFMTEwLwYDVQQDDChvZW1fNTFfcHJqX09wcG8gV2lkZXZpbmUg
+U003MzI1IEFwciAyMDIxMSQwIgYDVQQKDBtRdWFsY29tbSBUZWNobm9sb2dpZXMs
+IEluYy4xKjAoBgNVBAsMIVF1YWxjb21tIENyeXB0b2dyYXBoaWMgT3BlcmF0aW9u
+czCCASAwCwYJKoZIhvcNAQEBA4IBDwAwggEKAoIBAQD/////////////////////
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
-////////////////////////////////////////////////AgMBAAGjgY0wgYow
-HwYDVR0jBBgwFoAUhxTpNzJ+vbYo/DBqYCQQMNi9524wDAYDVR0TAQH/BAIwADAO
-BgNVHQ8BAf8EBAMCBaAwGQYJKwYBBAGLKQwBBAwAAAABAAAGQAAABkEwFgYKKwYB
-BAGLKQsBAQQIAAAAAAAAAFEwFgYKKwYBBAGLKQsBAgQIAAAAAAAAYA8wQQYJKoZI
-hvcNAQEKMDSgDzANBglghkgBZQMEAgEFAKEcMBoGCSqGSIb3DQEBCDANBglghkgB
-ZQMEAgEFAKIDAgEgA4IBAQAxRGCsFFuvBlEVTXK9vNB8Od+LfLiJKCo7JOu3JfYh
-k+yLlAy/wh66Ku6UcKkz2bwztAGKnXWVPSQY5ZlGsEwN2GszXtokT0BBnPTRw/63
-c1us5EqWuEfgnj4ogifBac16mEDl65Uabv73B391Thzt7jVfSgvQTXMM3gjtmW6w
-dnE1z1SAC1fqJEpaC84gk3LGmU62/+pdm9EdPRpvSnxcG3wYFkqoWxMAz+IE5MPj
-wYO7X+nJcQNvLgvr3k2vQeq6zfajwJRO3JdXArWPcaNcxMPceLLDvYYF9tDal+vX
-oqe2YvZm+43WgYi62yH6h+fWCZvoHneBiGZ0wsKop+8e
+////////////////////////////////////////////////////////////////
+AgMBAAGjgY0wgYowHwYDVR0jBBgwFoAUhxTpNzJ+vbYo/DBqYCQQMNi9524wDAYD
+VR0TAQH/BAIwADAOBgNVHQ8BAf8EBAMCBaAwGQYJKwYBBAGLKQwBBAwAAAAAAAAG
+QQAABkAwFgYKKwYBBAGLKQsBAQQIAAAAAAAAAFEwFgYKKwYBBAGLKQsBAgQIAAAA
+AAAAYBgwQQYJKoZIhvcNAQEKMDSgDzANBglghkgBZQMEAgEFAKEcMBoGCSqGSIb3
+DQEBCDANBglghkgBZQMEAgEFAKIDAgEgA4IBAQBN2z6/wIBcDokiQhVGxMxHjXoV
+IP4AHiyWmZOg6/4XQENQMbH3gTVQQaJAGs7rkwcdJIS+i/gIqZXw1uScbqd/9LP+
+l+xjPMlQqTN+u6gbOXjfFRNrOHpsgtw/xXs4XF+E/VUh8Xiqo0QImWFF8P9NoS2m
+cI1kr5vKB48oNfQzduzFKUPcIIqcqZ2XIXnJZZZq9wCLCoDXP1LRc32nDv4ihMdt
+ItJ2qZMEHhAzQGg+3Os72jl9Hk//AKER2DdwkBC91D7JOdAE0XGuxNDb8j20Slj8
+AIw8oQfV+Zklfumf9g90b9/i5dDfmhw7NclVd3Om7sQ7s5v1l2JwpXGVR8T/
 -----END CERTIFICATE-----
 
 
@@ -58,3 +72,5 @@ lC0VXF8DG90waxrhY5W/ziBJTy7BTFNlgdMFw/wP+Wm+1PzqPESnDcgKr2D8lYGY
 kyP2AUNEmQkr/P2wqjYmFwUl8Fu6vyfXXLrBD3DN+MprdUP2d+fxr6kcVfjikzfU
 ZkHrvWqUb3z63I2NMPXnoDq3ZcN+1eE15JqfFk68Z6gNh3qjcFyaI0g=
 -----END CERTIFICATE-----
+
+

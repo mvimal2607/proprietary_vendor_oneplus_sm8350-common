@@ -15718,43 +15718,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "vendor.oplus.hardware.performance-V1-ndk_platform",
-    owner: "oneplus",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/odm/lib/vendor.oplus.hardware.performance-V1-ndk_platform.so",
-            ],
-            shared_libs: [
-                "libbinder_ndk",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/odm/lib64/vendor.oplus.hardware.performance-V1-ndk_platform.so",
-            ],
-            shared_libs: [
-                "libbinder_ndk",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    device_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libaiboost_qnn_sr",
     owner: "oneplus",
     strip: {
@@ -16040,6 +16003,7 @@ cc_prebuilt_library_shared {
                 "libhidlbase",
                 "libhidltransport",
                 "vendor.oplus.hardware.communicationcenter_compat@1.0",
+                "vendor.oplus.hardware.communicationcenter_compat@1.1",
                 "libcommcenterutils",
                 "libcutils",
                 "liblog",
@@ -16081,6 +16045,35 @@ cc_prebuilt_library_shared {
                 "libcutils",
                 "libtrustedapploader",
                 "libdisplayconfig.qti",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    device_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "liboplus-uah-client",
+    owner: "oneplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/odm/lib64/liboplus-uah-client.so",
+            ],
+            shared_libs: [
+                "vendor.oplus.hardware.urcc-V1-ndk_platform",
+                "libcutils",
+                "libutils",
+                "liblog",
+                "libbinder_ndk",
                 "libc++",
                 "libc",
                 "libm",
@@ -16256,6 +16249,35 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "vendor.oplus.hardware.communicationcenter_compat@1.1",
+    owner: "oneplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/odm/lib64/vendor.oplus.hardware.communicationcenter_compat@1.1.so",
+            ],
+            shared_libs: [
+                "vendor.oplus.hardware.communicationcenter_compat@1.0",
+                "libhidlbase",
+                "liblog",
+                "libutils",
+                "libcutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    device_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "vendor.oplus.hardware.ims@1.0",
     owner: "oneplus",
     strip: {
@@ -16299,6 +16321,33 @@ cc_prebuilt_library_shared {
                 "liblog",
                 "libutils",
                 "libcutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    device_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "vendor.oplus.hardware.urcc-V1-ndk_platform",
+    owner: "oneplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/odm/lib64/vendor.oplus.hardware.urcc-V1-ndk_platform.so",
+            ],
+            shared_libs: [
+                "libjsoncpp_shim",
+                "libbinder_ndk",
+                "libjsoncpp",
                 "libc++",
                 "libc",
                 "libm",
@@ -19070,9 +19119,9 @@ install_symlink {
 }
 
 android_app_import {
-    name: "HotwordEnrollmentOKGoogle",
+    name: "HotwordEnrollmentXGoogleHEXAGON_WIDEBAND",
     owner: "oneplus",
-    apk: "proprietary/product/priv-app/HotwordEnrollmentOKGoogle/HotwordEnrollmentOKGoogle.apk",
+    apk: "proprietary/product/priv-app/HotwordEnrollmentXGoogleHEXAGON_WIDEBAND/HotwordEnrollmentXGoogleHEXAGON_WIDEBAND.apk",
     certificate: "platform",
     dex_preopt: {
         enabled: false,
@@ -19082,9 +19131,9 @@ android_app_import {
 }
 
 android_app_import {
-    name: "HotwordEnrollmentXGoogle",
+    name: "HotwordEnrollmentYGoogleHEXAGON_WIDEBAND",
     owner: "oneplus",
-    apk: "proprietary/product/priv-app/HotwordEnrollmentXGoogle/HotwordEnrollmentXGoogle.apk",
+    apk: "proprietary/product/priv-app/HotwordEnrollmentYGoogleHEXAGON_WIDEBAND/HotwordEnrollmentYGoogleHEXAGON_WIDEBAND.apk",
     certificate: "platform",
     dex_preopt: {
         enabled: false,
