@@ -16,6 +16,57 @@ soong_namespace {
 }
 
 cc_prebuilt_library_shared {
+    name: "libostatslog",
+    owner: "oneplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system/lib64/libostatslog.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libcutils",
+                "libstatssocket",
+                "libstatspull",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "vendor.oplus.hardware.displaypanelfeature-V1-ndk",
+    owner: "oneplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system/lib64/vendor.oplus.hardware.displaypanelfeature-V1-ndk.so",
+            ],
+            shared_libs: [
+                "libbinder_ndk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+}
+
+cc_prebuilt_library_shared {
     name: "vendor.qti.diaghal-V1-ndk",
     owner: "oneplus",
     strip: {
@@ -15374,6 +15425,34 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "vendor.oplus.hardware.displaypanelfeature@1.0",
+    owner: "oneplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system_ext/lib64/vendor.oplus.hardware.displaypanelfeature@1.0.so",
+            ],
+            shared_libs: [
+                "libhidlbase",
+                "liblog",
+                "libutils",
+                "libcutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    system_ext_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "vendor.qti.ImsRtpService-V1-ndk",
     owner: "oneplus",
     strip: {
@@ -15908,6 +15987,40 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libGaiaClient_vnd",
+    owner: "oneplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/odm/lib64/libGaiaClient_vnd.so",
+            ],
+            shared_libs: [
+                "libjsoncpp_shim",
+                "libbase_shim",
+                "vendor.oplus.hardware.olc2-V1-ndk_platform",
+                "liblog",
+                "libcutils",
+                "libutils",
+                "libjsoncpp",
+                "libhidlbase",
+                "libhidltransport",
+                "libbinder_ndk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    device_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libcommcenterfw",
     owner: "oneplus",
     strip: {
@@ -16124,6 +16237,36 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libosenseaidlhalclient_charge",
+    owner: "oneplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/odm/lib64/libosenseaidlhalclient_charge.so",
+            ],
+            shared_libs: [
+                "vendor.oplus.hardware.osense.client-V1-ndk",
+                "libbase",
+                "libbinder_ndk",
+                "liblog",
+                "libutils",
+                "libcutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    device_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libwvhidl",
     owner: "oneplus",
     strip: {
@@ -16221,6 +16364,59 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "vendor.oplus.hardware.charger-V6-ndk_platform",
+    owner: "oneplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/odm/lib64/vendor.oplus.hardware.charger-V6-ndk_platform.so",
+            ],
+            shared_libs: [
+                "libbinder_ndk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    device_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "vendor.oplus.hardware.charger@1.0",
+    owner: "oneplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/odm/lib64/vendor.oplus.hardware.charger@1.0.so",
+            ],
+            shared_libs: [
+                "libhidlbase",
+                "liblog",
+                "libutils",
+                "libcutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    device_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "vendor.oplus.hardware.communicationcenter_compat@1.0",
     owner: "oneplus",
     strip: {
@@ -16293,6 +16489,31 @@ cc_prebuilt_library_shared {
                 "liblog",
                 "libutils",
                 "libcutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    device_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "vendor.oplus.hardware.olc2-V1-ndk_platform",
+    owner: "oneplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/odm/lib64/vendor.oplus.hardware.olc2-V1-ndk_platform.so",
+            ],
+            shared_libs: [
+                "libbinder_ndk",
                 "libc++",
                 "libc",
                 "libm",
@@ -16698,6 +16919,15 @@ prebuilt_etc_xml {
     name: "manifest_android.hardware.drm@1.3-service.widevine.xml",
     owner: "oneplus",
     src: "proprietary/odm/etc/vintf/manifest/manifest_android.hardware.drm@1.3-service.widevine.xml",
+    filename_from_src: true,
+    sub_dir: "vintf/manifest",
+    device_specific: true,
+}
+
+prebuilt_etc_xml {
+    name: "manifest_oplus_charger_aidl.xml",
+    owner: "oneplus",
+    src: "proprietary/odm/etc/vintf/manifest/manifest_oplus_charger_aidl.xml",
     filename_from_src: true,
     sub_dir: "vintf/manifest",
     device_specific: true,
@@ -18901,6 +19131,50 @@ cc_prebuilt_binary {
 }
 
 cc_prebuilt_binary {
+    name: "horae",
+    owner: "oneplus",
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system_ext/bin/horae",
+            ],
+            shared_libs: [
+                "vendor.oplus.hardware.performance-V1-ndk",
+                "liblog",
+                "libcutils",
+                "libcrypto",
+                "libbinder",
+                "libutils",
+                "libhidlbase",
+                "libhidltransport",
+                "libhwbinder",
+                "libbase",
+                "libnl",
+                "android.hardware.health@1.0",
+                "android.hardware.health@2.0",
+                "libbinder_ndk",
+                "vendor.oplus.hardware.charger-V1-ndk",
+                "libprotobuf-cpp-lite",
+                "libostatslog",
+                "android.hardware.health-V1-ndk",
+                "vendor.oplus.hardware.displaypanelfeature@1.0",
+                "vendor.oplus.hardware.displaypanelfeature-V1-ndk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    system_ext_specific: true,
+}
+
+cc_prebuilt_binary {
     name: "tcmd",
     owner: "oneplus",
     target: {
@@ -18990,6 +19264,76 @@ cc_prebuilt_binary {
                 "libbinder",
                 "libc++",
                 "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    relative_install_path: "hw",
+    device_specific: true,
+}
+
+cc_prebuilt_binary {
+    name: "vendor.oplus.hardware.charger-V6-service",
+    owner: "oneplus",
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/odm/bin/hw/vendor.oplus.hardware.charger-V6-service",
+            ],
+            shared_libs: [
+                "libjsoncpp_shim",
+                "libbase_shim",
+                "libcutils",
+                "libhidlbase",
+                "libbinder_ndk",
+                "liblog",
+                "libutils",
+                "libbase",
+                "libbinder",
+                "android.frameworks.sensorservice@1.0",
+                "android.hardware.sensors@1.0",
+                "libsensorndkbridge",
+                "libm",
+                "vendor.oplus.hardware.charger-V6-ndk",
+                "vendor.oplus.hardware.osense.client-V1-ndk",
+                "libosenseaidlhalclient_charge",
+                "libjsoncpp",
+                "libGaiaClient_vnd",
+                "libc++",
+                "libc",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    relative_install_path: "hw",
+    device_specific: true,
+}
+
+cc_prebuilt_binary {
+    name: "wlschgd",
+    owner: "oneplus",
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/odm/bin/hw/wlschgd",
+            ],
+            shared_libs: [
+                "libcutils",
+                "liblog",
+                "libc",
+                "libbase",
+                "libc++",
                 "libm",
                 "libdl",
             ],

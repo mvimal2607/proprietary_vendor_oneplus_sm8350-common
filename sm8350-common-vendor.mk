@@ -9,8 +9,13 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8350-common/proprietary/odm/etc/init/android.hardware.drm@1.3-service.widevine.rc:$(TARGET_COPY_OUT_ODM)/etc/init/android.hardware.drm@1.3-service.widevine.rc \
     vendor/oneplus/sm8350-common/proprietary/odm/etc/init/hw/init.oplus.display.rc:$(TARGET_COPY_OUT_ODM)/etc/init/hw/init.oplus.display.rc \
     vendor/oneplus/sm8350-common/proprietary/odm/etc/init/init.oplus.sensor.rc:$(TARGET_COPY_OUT_ODM)/etc/init/init.oplus.sensor.rc \
+    vendor/oneplus/sm8350-common/proprietary/odm/etc/init/vendor.oplus.hardware.charger-V6-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.oplus.hardware.charger-V6-service.rc \
     vendor/oneplus/sm8350-common/proprietary/odm/etc/izat.conf:$(TARGET_COPY_OUT_ODM)/etc/izat.conf \
+    vendor/oneplus/sm8350-common/proprietary/odm/etc/permissions/vendor-oplus-hardware-charger.xml:$(TARGET_COPY_OUT_ODM)/etc/permissions/vendor-oplus-hardware-charger.xml \
     vendor/oneplus/sm8350-common/proprietary/odm/etc/sap.conf:$(TARGET_COPY_OUT_ODM)/etc/sap.conf \
+    vendor/oneplus/sm8350-common/proprietary/odm/firmware/fastchg/bms_heating_config.txt:$(TARGET_COPY_OUT_ODM)/firmware/fastchg/bms_heating_config.txt \
+    vendor/oneplus/sm8350-common/proprietary/odm/firmware/fastchg/charging_thermal_config_default.txt:$(TARGET_COPY_OUT_ODM)/firmware/fastchg/charging_thermal_config_default.txt \
+    vendor/oneplus/sm8350-common/proprietary/odm/firmware/fastchg/smart_chg_config_table.txt:$(TARGET_COPY_OUT_ODM)/firmware/fastchg/smart_chg_config_table.txt \
     vendor/oneplus/sm8350-common/proprietary/odm/firmware/tp/19815/FW_S3908_SAMSUNG.img:$(TARGET_COPY_OUT_ODM)/firmware/tp/19815/FW_S3908_SAMSUNG.img \
     vendor/oneplus/sm8350-common/proprietary/odm/firmware/tp/19815/FW_S3908_SAMSUNG_FAE.img:$(TARGET_COPY_OUT_ODM)/firmware/tp/19815/FW_S3908_SAMSUNG_FAE.img \
     vendor/oneplus/sm8350-common/proprietary/odm/firmware/tp/19815/LIMIT_S3908_SAMSUNG.img:$(TARGET_COPY_OUT_ODM)/firmware/tp/19815/LIMIT_S3908_SAMSUNG.img \
@@ -63,7 +68,10 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8350-common/proprietary/odm/firmware/tp/21617/LIMIT_FT3658U_SAMSUNG.img:$(TARGET_COPY_OUT_ODM)/firmware/tp/21617/LIMIT_FT3658U_SAMSUNG.img \
     vendor/oneplus/sm8350-common/proprietary/system/etc/sysconfig/qti_whitelist.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/qti_whitelist.xml \
     vendor/oneplus/sm8350-common/proprietary/system_ext/etc/dpm/dpm.conf:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/dpm/dpm.conf \
+    vendor/oneplus/sm8350-common/proprietary/system_ext/etc/horae/horae.conf:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/horae/horae.conf \
+    vendor/oneplus/sm8350-common/proprietary/system_ext/etc/horae/horae_SM8350.conf:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/horae/horae_SM8350.conf \
     vendor/oneplus/sm8350-common/proprietary/system_ext/etc/init/dpmd.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/dpmd.rc \
+    vendor/oneplus/sm8350-common/proprietary/system_ext/etc/init/horae.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/horae.rc \
     vendor/oneplus/sm8350-common/proprietary/system_ext/etc/init/tcmd.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/tcmd.rc \
     vendor/oneplus/sm8350-common/proprietary/system_ext/etc/init/wfdservice.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/wfdservice.rc \
     vendor/oneplus/sm8350-common/proprietary/system_ext/etc/permissions/com.qti.dpmframework.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.qti.dpmframework.xml \
@@ -351,6 +359,8 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8350-common/proprietary/vendor/gpu/kbc/unified_ksqs.bin:$(TARGET_COPY_OUT_VENDOR)/gpu/kbc/unified_ksqs.bin
 
 PRODUCT_PACKAGES += \
+    libostatslog \
+    vendor.oplus.hardware.displaypanelfeature-V1-ndk \
     vendor.qti.diaghal-V1-ndk \
     btaudio_offload_if \
     eglSubDriverAndroid \
@@ -837,6 +847,7 @@ PRODUCT_PACKAGES += \
     libwfduibcsinkinterface \
     libwfduibcsrc \
     libwfduibcsrcinterface \
+    vendor.oplus.hardware.displaypanelfeature@1.0 \
     vendor.qti.ImsRtpService-V1-ndk \
     vendor.qti.hardware.dpmaidlservice-V1-ndk \
     vendor.qti.hardware.dpmservice@1.0 \
@@ -855,6 +866,7 @@ PRODUCT_PACKAGES += \
     libosie_process \
     libosie_stub \
     lib-virtual-modem-protos \
+    libGaiaClient_vnd \
     libcommcenterfw \
     libcommcenterutils \
     libdmtp-protos-lite \
@@ -862,12 +874,16 @@ PRODUCT_PACKAGES += \
     liboemcrypto \
     liboplus-uah-client \
     liboplus_service \
+    libosenseaidlhalclient_charge \
     libwvhidl \
     libwvdrmengine \
     vendor.oplus.hardware.appradio@1.0 \
+    vendor.oplus.hardware.charger-V6-ndk_platform \
+    vendor.oplus.hardware.charger@1.0 \
     vendor.oplus.hardware.communicationcenter_compat@1.0 \
     vendor.oplus.hardware.communicationcenter_compat@1.1 \
     vendor.oplus.hardware.ims@1.0 \
+    vendor.oplus.hardware.olc2-V1-ndk_platform \
     vendor.oplus.hardware.radio@1.0 \
     vendor.oplus.hardware.urcc-V1-ndk_platform \
     CACertService \
@@ -905,6 +921,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.gnss@4.0-service.xml \
     vendor.qti.hardware.servicetracker@1.2-service.xml \
     manifest_android.hardware.drm@1.3-service.widevine.xml \
+    manifest_oplus_charger_aidl.xml \
     adpl \
     adsprpcd \
     cdsprpcd \
@@ -980,9 +997,12 @@ PRODUCT_PACKAGES += \
     xtwifi-client \
     xtwifi-inet-agent \
     dpmd \
+    horae \
     tcmd \
     wfdservice \
     android.hardware.drm@1.3-service.widevine \
+    vendor.oplus.hardware.charger-V6-service \
+    wlschgd \
     oplus_sensor_fb
 
 PRODUCT_PACKAGES += \
