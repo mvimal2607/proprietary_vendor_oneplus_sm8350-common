@@ -873,7 +873,6 @@ PRODUCT_PACKAGES += \
     libdmtp-protos-lite \
     libdmtpclient \
     liboemcrypto \
-    liboplus-uah-client \
     liboplus_service \
     libosenseaidlhalclient_charge \
     libwvhidl \
@@ -886,7 +885,6 @@ PRODUCT_PACKAGES += \
     vendor.oplus.hardware.ims@1.0 \
     vendor.oplus.hardware.olc2-V1-ndk_platform \
     vendor.oplus.hardware.radio@1.0 \
-    vendor.oplus.hardware.urcc-V1-ndk_platform \
     CACertService \
     CneApp \
     IWlanService \
