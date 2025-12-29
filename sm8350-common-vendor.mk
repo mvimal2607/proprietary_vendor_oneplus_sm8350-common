@@ -361,7 +361,6 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_PACKAGES += \
     libostatslog \
-    vendor.oplus.hardware.displaypanelfeature-V1-ndk \
     vendor.qti.diaghal-V1-ndk \
     btaudio_offload_if \
     eglSubDriverAndroid \
@@ -848,7 +847,6 @@ PRODUCT_PACKAGES += \
     libwfduibcsinkinterface \
     libwfduibcsrc \
     libwfduibcsrcinterface \
-    vendor.oplus.hardware.displaypanelfeature@1.0 \
     vendor.qti.ImsRtpService-V1-ndk \
     vendor.qti.hardware.dpmaidlservice-V1-ndk \
     vendor.qti.hardware.dpmservice@1.0 \
