@@ -183,12 +183,14 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8350-common/proprietary/vendor/etc/init/vendor.qti.hardware.capabilityconfigstore@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.capabilityconfigstore@1.0-service.rc \
     vendor/oneplus/sm8350-common/proprietary/vendor/etc/init/vendor.qti.hardware.charger_monitor@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.charger_monitor@1.0-service.rc \
     vendor/oneplus/sm8350-common/proprietary/vendor/etc/init/vendor.qti.hardware.dsp@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.dsp@1.0-service.rc \
+    vendor/oneplus/sm8350-common/proprietary/vendor/etc/init/vendor.qti.hardware.perf@2.2-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.perf@2.2-service.rc \
     vendor/oneplus/sm8350-common/proprietary/vendor/etc/init/vendor.qti.hardware.qseecom@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.qseecom@1.0-service.rc \
     vendor/oneplus/sm8350-common/proprietary/vendor/etc/init/vendor.qti.hardware.qteeconnector@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.qteeconnector@1.0-service.rc \
     vendor/oneplus/sm8350-common/proprietary/vendor/etc/init/vendor.qti.hardware.sensorscalibrate@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.sensorscalibrate@1.0-service.rc \
     vendor/oneplus/sm8350-common/proprietary/vendor/etc/init/vendor.qti.hardware.soter@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.soter@1.0-service.rc \
     vendor/oneplus/sm8350-common/proprietary/vendor/etc/init/vendor.qti.hardware.tui_comm@1.0-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.tui_comm@1.0-service-qti.rc \
     vendor/oneplus/sm8350-common/proprietary/vendor/etc/init/vendor.qti.media.c2@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.media.c2@1.0-service.rc \
+    vendor/oneplus/sm8350-common/proprietary/vendor/etc/init/vendor.qti.qspmhal@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.qspmhal@1.0-service.rc \
     vendor/oneplus/sm8350-common/proprietary/vendor/etc/init/vendor.qti.rmt_storage.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.rmt_storage.rc \
     vendor/oneplus/sm8350-common/proprietary/vendor/etc/init/vendor.qti.tftp.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.tftp.rc \
     vendor/oneplus/sm8350-common/proprietary/vendor/etc/init/vendor.sensors.qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.sensors.qti.rc \
@@ -210,6 +212,12 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8350-common/proprietary/vendor/etc/media_yupik_v1/video_system_specs.json:$(TARGET_COPY_OUT_VENDOR)/etc/media_yupik_v1/video_system_specs.json \
     vendor/oneplus/sm8350-common/proprietary/vendor/etc/msm_irqbalance.conf:$(TARGET_COPY_OUT_VENDOR)/etc/msm_irqbalance.conf \
     vendor/oneplus/sm8350-common/proprietary/vendor/etc/oplus_Widevine_licenses.pfm:$(TARGET_COPY_OUT_VENDOR)/etc/oplus_Widevine_licenses.pfm \
+    vendor/oneplus/sm8350-common/proprietary/vendor/etc/perf/commonresourceconfigs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/commonresourceconfigs.xml \
+    vendor/oneplus/sm8350-common/proprietary/vendor/etc/perf/commonsysnodesconfigs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/commonsysnodesconfigs.xml \
+    vendor/oneplus/sm8350-common/proprietary/vendor/etc/perf/perfboostsconfig.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/perfboostsconfig.xml \
+    vendor/oneplus/sm8350-common/proprietary/vendor/etc/perf/perfconfigstore.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/perfconfigstore.xml \
+    vendor/oneplus/sm8350-common/proprietary/vendor/etc/perf/targetconfig.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/targetconfig.xml \
+    vendor/oneplus/sm8350-common/proprietary/vendor/etc/perf/targetresourceconfigs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/targetresourceconfigs.xml \
     vendor/oneplus/sm8350-common/proprietary/vendor/etc/permissions/vendor-qti-hardware-sensorscalibrate.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/vendor-qti-hardware-sensorscalibrate.xml \
     vendor/oneplus/sm8350-common/proprietary/vendor/etc/public.libraries.txt:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries.txt \
     vendor/oneplus/sm8350-common/proprietary/vendor/etc/qconfigpresets.json:$(TARGET_COPY_OUT_VENDOR)/etc/qconfigpresets.json \
@@ -247,6 +255,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8350-common/proprietary/vendor/etc/seccomp_policy/gnss@2.0-xtwifi-inet-agent.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/gnss@2.0-xtwifi-inet-agent.policy \
     vendor/oneplus/sm8350-common/proprietary/vendor/etc/seccomp_policy/imsrtp.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/imsrtp.policy \
     vendor/oneplus/sm8350-common/proprietary/vendor/etc/seccomp_policy/qcrilnr@2.0.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/qcrilnr@2.0.policy \
+    vendor/oneplus/sm8350-common/proprietary/vendor/etc/seccomp_policy/qspm.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/qspm.policy \
     vendor/oneplus/sm8350-common/proprietary/vendor/etc/seccomp_policy/qti-systemd.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/qti-systemd.policy \
     vendor/oneplus/sm8350-common/proprietary/vendor/etc/seccomp_policy/vendor.qti.hardware.dsp.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/vendor.qti.hardware.dsp.policy \
     vendor/oneplus/sm8350-common/proprietary/vendor/etc/seccomp_policy/wfdhdcphalservice.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/wfdhdcphalservice.policy \
@@ -389,6 +398,9 @@ PRODUCT_PACKAGES += \
     libmdsprpc \
     libmmosal_vendor \
     libnetmgr \
+    libperfconfig \
+    libperfgluelayer \
+    libperfioctl \
     libqcmaputils \
     libqconfigclient \
     libqdi \
@@ -402,6 +414,9 @@ PRODUCT_PACKAGES += \
     libqmi_encdec \
     libqmi_legacy \
     libqmiservices \
+    libqti-perfd-client \
+    libqti-perfd \
+    libqti-util \
     libscveCommon \
     libscveCommon_stub \
     libscveObjectSegmentation \
@@ -733,42 +748,43 @@ PRODUCT_PACKAGES += \
     vendor.qti.imsrtpservice@3.0_vendor \
     vendor.qti.latency@2.0 \
     vendor.qti.latency@2.1 \
-    vendor_lib_rfsa_adsp_bm2n06_bin \
-    vendor_lib_rfsa_adsp_bm2n08_bin \
-    vendor_lib_rfsa_adsp_bm2n12_bin \
-    vendor_lib_rfsa_adsp_bm2n13_bin \
-    vendor_lib_rfsa_adsp_bm2n14_bin \
-    vendor_lib_rfsa_adsp_bm2n15_bin \
-    vendor_lib_rfsa_adsp_capi_v2_aptX_CLHDADV_Encoder_so \
-    vendor_lib_rfsa_adsp_capi_v2_aptX_CLHDAD_Speech_Decoder_so \
-    vendor_lib_rfsa_adsp_libQ6MSFR_manager_skel_so \
-    vendor_lib_rfsa_adsp_libVppAisQnnHtp_so \
-    vendor_lib_rfsa_adsp_libVppFrcQnnHtp_so \
-    vendor_lib_rfsa_adsp_libVppQnnHtp_so \
-    vendor_lib_rfsa_adsp_libadsp_jpege_skel_so \
-    vendor_lib_rfsa_adsp_libapps_mem_heap_so \
-    vendor_lib_rfsa_adsp_libbitml_nsp_skel_so \
-    vendor_lib_rfsa_adsp_libbitml_nsp_v2_skel_so \
-    vendor_lib_rfsa_adsp_libcamera_nn_skel_so \
-    vendor_lib_rfsa_adsp_libcvpdsp_2_1_so \
-    vendor_lib_rfsa_adsp_libdspCV_skel_so \
-    vendor_lib_rfsa_adsp_libdsp_streamer_binning_so \
-    vendor_lib_rfsa_adsp_libfastcvadsp_so \
-    vendor_lib_rfsa_adsp_libfastcvdsp_skel_so \
-    vendor_lib_rfsa_adsp_libhdr_skel_so \
-    vendor_lib_rfsa_adsp_libmctfengine_skel_so \
-    vendor_lib_rfsa_adsp_libmobilenet_dsp_frc_so \
-    vendor_lib_rfsa_adsp_libmobilenet_dsp_frc_networks_so \
-    vendor_lib_rfsa_adsp_libosie_skel_so \
-    vendor_lib_rfsa_adsp_libpmucount_skel_so \
-    vendor_lib_rfsa_adsp_libscveObjectSegmentation_skel_so \
-    vendor_lib_rfsa_adsp_libscveT2T_skel_so \
-    vendor_lib_rfsa_adsp_libsns_device_mode_skel_so \
-    vendor_lib_rfsa_adsp_libsns_low_lat_stream_skel_so \
-    vendor_lib_rfsa_adsp_libsuper_res_networks_so \
-    vendor_lib_rfsa_adsp_libvpp_ais_networks_so \
-    vendor_lib_rfsa_adsp_libvpt_action_recognition_so \
-    vendor_lib_rfsa_adsp_libworker_pool_so \
+    vendor.qti.qspmhal@1.0-impl \
+    bm2n06 \
+    bm2n08 \
+    bm2n12 \
+    bm2n13 \
+    bm2n14 \
+    bm2n15 \
+    capi_v2_aptX_CLHDADV_Encoder \
+    capi_v2_aptX_CLHDAD_Speech_Decoder \
+    libQ6MSFR_manager_skel \
+    libVppAisQnnHtp \
+    libVppFrcQnnHtp \
+    libVppQnnHtp \
+    libadsp_jpege_skel \
+    libapps_mem_heap \
+    libbitml_nsp_skel \
+    libbitml_nsp_v2_skel \
+    libcamera_nn_skel \
+    libcvpdsp_2_1 \
+    libdspCV_skel \
+    libdsp_streamer_binning \
+    libfastcvadsp \
+    libfastcvdsp_skel \
+    libhdr_skel \
+    libmctfengine_skel \
+    libmobilenet_dsp_frc \
+    libmobilenet_dsp_frc_networks \
+    libosie_skel \
+    libpmucount_skel \
+    libscveObjectSegmentation_skel \
+    libscveT2T_skel \
+    libsns_device_mode_skel \
+    libsns_low_lat_stream_skel \
+    libsuper_res_networks \
+    libvpp_ais_networks \
+    libvpt_action_recognition \
+    libworker_pool \
     vendor.qti.diaghal@1.0 \
     com.qualcomm.qti.dpm.api@1.0 \
     lib-imsvideocodec \
@@ -892,6 +908,7 @@ PRODUCT_PACKAGES += \
     vendor.display.color@1.0-service \
     vendor.qti.hardware.alarm@1.0-service \
     vendor.qti.hardware.capabilityconfigstore@1.0-service \
+    vendor.qti.hardware.perf@2.2-service \
     vendor.qti.hardware.qseecom@1.0-service \
     vendor.qti.hardware.qteeconnector@1.0-service \
     vendor.qti.hardware.sensorscalibrate@1.0-service \
@@ -937,6 +954,7 @@ PRODUCT_PACKAGES += \
     tftp_server \
     thermal-engine \
     time_daemon \
+    vendor.qti.qspmhal@1.0-service \
     vendor_modprobe \
     vppservice \
     wfdhdcphalservice \
